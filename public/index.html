@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#2196f3">
+  <link rel='manifest' href='./manifest.json'>
+  <title>The Rocks</title>
+  <script>
+    // Registering our Service worker
+    if('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js', { scope: './' })
+    }
+  </script>
+</head>
+<body>
+  <div class="hero">
+    <h1>Temporas</h1>
+    <h2>Take your medicine my friend</h2>
+    <div id="status"></div>
+    <button id="unsubscribe">unsubscribe</button>
+  </div>
+</body>
+</html>
